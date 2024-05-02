@@ -369,7 +369,7 @@ body {
 .popular h4{
   text-align: center;
   justify-content: center;
-  text-size-adjust: 90%;
+  font-size-adjust: 90%;
   margin-left: 0%;
   padding-left: 5%;
 

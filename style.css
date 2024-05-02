@@ -12,6 +12,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
+}
 
 .pop-content{
   font-size: 50%;
@@ -31,13 +32,8 @@
   border: 1px; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-
-
-
-
 }
-}
+
 .container h1 {
   color: white;
 }
@@ -65,7 +61,7 @@ body {
   margin-left: 10%;
 }
 
-.container {
+.container-footer {
   background-image: url(img.png);
   background-size: cover;
   height: 400px;
@@ -82,7 +78,7 @@ body {
 .popular h4{
   text-align: center;
   justify-content: center;
-  text-size-adjust: 90%;
+  font-size-adjust: 90%;
   margin-left: 0%;
   padding-left: 5%;
 

@@ -285,3 +285,134 @@ body {
   height: 48px;
   margin-top: -50px;
 }
+/* .container_footer {
+  background-image: url(Section\→\image\\(1\).png);
+  background-repeat: no-repeat;
+  padding: 40px;
+  background-position: center;
+  padding-bottom: 10vh;
+  padding: 0;
+  margin: 0;
+} */
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+.pop-content{
+  font-size: 50%;
+}
+.email-cont button{
+  border: none;
+  background-color: white;
+}
+.email-cont input{
+  border: none;
+}
+.email-cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  border: 1px; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+
+
+
+}
+}
+.container h1 {
+  color: white;
+}
+.Email input {
+  background-color: rgba(139, 36, 235, 0);
+  width: 70vh;
+  height: 10vh;
+  border-radius: 10px;
+}
+body {
+  font-family: "Average Sans";
+  font-size: 22px;
+}
+
+.Email button {
+  color: rgb(99, 32, 207);
+  margin-right: 70vh;
+}
+
+.speak p{
+  margin-left: 70%;font-size: 40%;
+}
+
+.speak{
+  margin-left: 10%;
+}
+
+.container_footer {
+  background-image: url(img.png);
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding-top: 6%;
+  padding-left: 150px;
+}
+
+.popular h4{
+  text-align: center;
+  justify-content: center;
+  text-size-adjust: 90%;
+  margin-left: 0%;
+  padding-left: 5%;
+
+}
+ 
+.menu popular {
+  font-size: 60%;
+  font-weight: 100%;
+}
+
+.container p {
+  color: white;
+}
+
+.sub {
+  display: flex;
+  background-color: rgb(116, 43, 226);
+  height: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 52vh;
+  border-radius: 20px;
+}
+.sub input::placeholder {
+  color: white;
+  padding-left: 10px;
+}
+.sub button {
+  border-radius: 8px;
+  border: none;
+  height: 6vh;
+  /* margin-top: -15vh; */
+  width: 40vh;
+}
+.sub input {
+  outline: none;
+  background-color: rgb(116, 43, 226);
+  color: white;
+  border: none;
+  padding-right: 30px;
+}
+.sub span button {
+  width: 100px;
+  height: 48px;
+  margin-top: -50px;
+}

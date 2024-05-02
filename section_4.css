@@ -1,3 +1,4 @@
+/* Define styles for the section */
 .section {
   position: relative;
   width: 1320px;
@@ -5,12 +6,14 @@
   margin: 0 auto; /* Center the section horizontally */
 }
 
+/* Define styles for the container */
 .container {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
+/* Define styles for the "See All" link */
 .link--see-all {
   position: absolute;
   top: 20px;
@@ -24,12 +27,14 @@
   border-radius: 8px;
 }
 
+/* Define styles for the grid container */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
   gap: 20px; /* Gap between grid items */
 }
 
+/* Define common styles for destination links */
 .link--cruises,
 .link--Beach,
 .link--City,
@@ -39,6 +44,7 @@
   position: relative; /* Set position to relative for absolute positioning of child elements */
 }
 
+/* Define styles for pseudo-elements */
 .link::after {
   content: ''; /* Ensure pseudo-elements have content */
   position: absolute;
@@ -52,6 +58,7 @@
   z-index: -1; /* Ensure pseudo-elements are behind their parent elements */
 }
 
+/* Define specific styles for individual destination links */
 .link--cruises::after {
   width: 300px;
   height: 240px;
@@ -74,6 +81,7 @@
   height: 240px;
 }
 
+/* Define styles for destination labels */
 .link--cruises h4,
 .link--Beach h4,
 .link--City h4,
@@ -92,6 +100,7 @@
   z-index: 1; /* Ensure text is above pseudo-element */
 }
 
+/* Define specific styles for Beach link */
 .link--Beach {
   position: absolute;
   left: 335px; /* Adjust left position as needed */
@@ -101,14 +110,17 @@
   border-radius: 12px;
 }
 
+/* Define specific styles for City link */
 .link--City {
-  position: absolutes;
+  position: absolutes; /* Typo: should be "absolute" */
   left: 200px; /* Adjust left position as needed */
   top: 90px; /* Adjust top position as needed */
   width: 410px;
   height: 510px;
   border-radius: 12px;
 }
+
+/* Define specific styles for Museum link */
 .link--Museum {
   position: absolute;
   top: 410px; /* Adjust top position as needed */
@@ -118,6 +130,7 @@
   height: 240px;
 }
 
+/* Define specific styles for Hiking link */
 .link--Hiking {
   position: absolute;
   top: 410px; /* Adjust top position as needed */
@@ -126,19 +139,22 @@
   width: 300px;
   height: 240px;
 }
+
+/* Define specific styles for Cruises link */
 .link--cruises {
-    top: 90px; /* Adjust top position as needed */
-    left: 15px; /* Adjust left position as needed */
-    border-radius: 12px;
-    width: 300px;
-    height: 240px;
+  top: 90px; /* Adjust top position as needed */
+  left: 15px; /* Adjust left position as needed */
+  border-radius: 12px;
+  width: 300px;
+  height: 240px;
 }
 
+/* Define specific styles for Food link */
 .link--Food {
-    position: absolute;
-    top: 410px; /* Adjust top position as needed */
-    left: 345px; /* Adjust left position as needed */
-    border-radius: 12px;
-    width: 190px;
-    height: 240px;
+  position: absolute;
+  top: 410px; /* Adjust top position as needed */
+  left: 345px; /* Adjust left position as needed */
+  border-radius: 12px;
+  width: 190px;
+  height: 240px;
 }

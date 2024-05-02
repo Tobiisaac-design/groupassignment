@@ -1,0 +1,413 @@
+/* Define styles for the section */
+.section {
+  position: relative;
+  max-width: 1320px;
+  max-height: 600px;
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+/* Define styles for the container */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Define styles for the "See All" link */
+.link--see-all {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee; /* Example background color */
+  border-radius: 8px;
+}
+
+/* Define styles for the grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
+  gap: 20px; /* Gap between grid items */
+}
+
+/* Define common styles for destination links */
+.link--cruises,
+.link--Beach,
+.link--City,
+.link--Museum,
+.link--Food,
+.link--Hiking {
+  position: relative; /* Set position to relative for absolute positioning of child elements */
+}
+
+/* Define styles for pseudo-elements */
+.link::after {
+  content: ''; /* Ensure pseudo-elements have content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(5, 7, 60, 0) 0%, #05073C 100%);
+  opacity: 0.5; /* Adjust opacity as needed */
+  border-radius: 12px; /* Adjust border radius as needed */
+  z-index: -1; /* Ensure pseudo-elements are behind their parent elements */
+}
+
+/* Define specific styles for individual destination links */
+.link--cruises::after {
+  width: 300px;
+  height: 240px;
+}
+
+.link--Beach::after {
+  width: 520px;
+  height: 240px;
+}
+
+.link--City::after {
+  width: 410px;
+  height: 510px;
+}
+
+.link--Museum::after,
+.link--Food::after,
+.link--Hiking::after {
+  width: 300px;
+  height: 240px;
+}
+
+/* Define styles for destination labels */
+.link--cruises h4,
+.link--Beach h4,
+.link--City h4,
+.link--Museum h4,
+.link--Food h4,
+.link--Hiking h4 {
+  position: absolute;
+  bottom: 20px; /* Adjust positioning as needed */
+  left: 20px; /* Adjust positioning as needed */
+  margin: 0;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 18px; /* Adjust font size as needed */
+  line-height: 1.2;
+  color: #fff; /* Example text color */
+  z-index: 1; /* Ensure text is above pseudo-element */
+}
+
+/* Define specific styles for Beach link */
+.link--Beach {
+  position: absolute;
+  left: 335px; /* Adjust left position as needed */
+  top: 140px; /* Adjust top position as needed */
+  width: 520px;
+  height: 240px;
+  border-radius: 12px;
+}
+
+/* Define specific styles for City link */
+.link--City {
+  position: absolutes; /* Typo: should be "absolute" */
+  left: 200px; /* Adjust left position as needed */
+  top: 90px; /* Adjust top position as needed */
+  width: 410px;
+  height: 510px;
+  border-radius: 12px;
+}
+
+/* Define specific styles for Museum link */
+.link--Museum {
+  position: absolute;
+  top: 410px; /* Adjust top position as needed */
+  left: 3px; /* Adjust left position as needed */
+  border-radius: 12px;
+  width: 300px;
+  height: 240px;
+}
+
+/* Define specific styles for Hiking link */
+.link--Hiking {
+  position: absolute;
+  top: 410px; /* Adjust top position as needed */
+  left: 550px; /* Adjust left position as needed */
+  border-radius: 12px;
+  width: 300px;
+  height: 240px;
+}
+
+/* Define specific styles for Cruises link */
+.link--cruises {
+  top: 90px; /* Adjust top position as needed */
+  left: 15px; /* Adjust left position as needed */
+  border-radius: 12px;
+  width: 300px;
+  height: 240px;
+}
+
+/* Define specific styles for Food link */
+.link--Food {
+  position: absolute;
+  top: 410px; /* Adjust top position as needed */
+  left: 345px; /* Adjust left position as needed */
+  border-radius: 12px;
+  width: 190px;
+  height: 240px;
+}
+/* .container {
+  background-image: url(Section\→\image\\(1\).png);
+  background-repeat: no-repeat;
+  padding: 40px;
+  background-position: center;
+  padding-bottom: 10vh;
+  padding: 0;
+  margin: 0;
+} */
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.pop-content{
+  font-size: 50%;
+}
+.email-cont button{
+  border: none;
+  background-color: white;
+}
+.email-cont input{
+  border: none;
+}
+.email-cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  border: 1px; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  color: white;
+}
+.Email input {
+  background-color: rgba(139, 36, 235, 0);
+  width: 70vh;
+  height: 10vh;
+  border-radius: 10px;
+}
+body {
+  font-family: "Average Sans";
+  font-size: 22px;
+}
+
+.Email button {
+  color: rgb(99, 32, 207);
+  margin-right: 70vh;
+}
+
+.speak p{
+  margin-left: 70%;font-size: 40%;
+}
+
+.speak{
+  margin-left: 10%;
+}
+
+.container-footer {
+  background-image: url(img.png);
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding-top: 6%;
+  padding-left: 150px;
+}
+
+.popular h4{
+  text-align: center;
+  justify-content: center;
+  font-size-adjust: 90%;
+  margin-left: 0%;
+  padding-left: 5%;
+
+}
+ 
+.menu popular {
+  font-size: 60%;
+  font-weight: 100%;
+}
+
+.container p {
+  color: white;
+}
+
+.sub {
+  display: flex;
+  background-color: rgb(116, 43, 226);
+  height: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 52vh;
+  border-radius: 20px;
+}
+.sub input::placeholder {
+  color: white;
+  padding-left: 10px;
+}
+.sub button {
+  border-radius: 8px;
+  border: none;
+  height: 6vh;
+  /* margin-top: -15vh; */
+  width: 40vh;
+}
+.sub input {
+  outline: none;
+  background-color: rgb(116, 43, 226);
+  color: white;
+  border: none;
+  padding-right: 30px;
+}
+.sub span button {
+  width: 100px;
+  height: 48px;
+  margin-top: -50px;
+}
+/* .container_footer {
+  background-image: url(Section\→\image\\(1\).png);
+  background-repeat: no-repeat;
+  padding: 40px;
+  background-position: center;
+  padding-bottom: 10vh;
+  padding: 0;
+  margin: 0;
+} */
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.pop-content{
+  font-size: 50%;
+}
+.email-cont button{
+  border: none;
+  background-color: white;
+}
+.email-cont input{
+  border: none;
+}
+.email-cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  border: 1px; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  color: white;
+}
+.Email input {
+  background-color: rgba(139, 36, 235, 0);
+  width: 70vh;
+  height: 10vh;
+  border-radius: 10px;
+}
+body {
+  font-family: "Average Sans";
+  font-size: 22px;
+}
+
+.Email button {
+  color: rgb(99, 32, 207);
+  margin-right: 70vh;
+}
+
+.speak p{
+  margin-left: 70%;font-size: 40%;
+}
+
+.speak{
+  margin-left: 10%;
+}
+
+.container_footer {
+  background-image: url(img.png);
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding-top: 6%;
+  padding-left: 150px;
+}
+
+.popular h4{
+  text-align: center;
+  justify-content: center;
+  font-size-adjust: 90%;
+  margin-left: 0%;
+  padding-left: 5%;
+
+}
+ 
+.menu popular {
+  font-size: 60%;
+  font-weight: 100%;
+}
+
+.container p {
+  color: white;
+}
+
+.sub {
+  display: flex;
+  background-color: rgb(116, 43, 226);
+  height: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 52vh;
+  border-radius: 20px;
+}
+.sub input::placeholder {
+  color: white;
+  padding-left: 10px;
+}
+.sub button {
+  border-radius: 8px;
+  border: none;
+  height: 6vh;
+  /* margin-top: -15vh; */
+  width: 40vh;
+}
+.sub input {
+  outline: none;
+  background-color: rgb(116, 43, 226);
+  color: white;
+  border: none;
+  padding-right: 30px;
+}
+.sub span button {
+  width: 100px;
+  height: 48px;
+  margin-top: -50px;
+}
